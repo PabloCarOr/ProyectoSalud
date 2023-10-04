@@ -6,6 +6,6 @@ pip.main(["install", "openpyxl"])
 
 st.title('Subir base de datos de Excel')
 
-df = pd.read_excel('50000_Set_de_datos.xlsx')
+df = pd.read_excel('prueba.xlsx')
 
 st.write(df)
