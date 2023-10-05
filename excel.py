@@ -238,4 +238,4 @@ df_selection = df.query(
     "EDAD == @edad & NACIONALIDAD == @nacionalidad & EMBARAZO == @embarazo & HABLA_LENGUA_INDIG == @lenguaIndigena"
 )
 
-st.dataframe(df_selection)
+st.write(df_selection)
