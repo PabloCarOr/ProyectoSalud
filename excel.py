@@ -103,7 +103,7 @@ neumonia = st.sidebar.multiselect(
 
 st.sidebar.header("Filtra aquí:")
 edad = st.sidebar.multiselect(
-    "Selecciona la ciudad:",
+    "Selecciona la edad:",
     options=df["EDAD"].unique(),
     default=df["EDAD"].unique()
 )
@@ -232,4 +232,8 @@ unidadCuidadosIntensivos = st.sidebar.multiselect(
     "Selecciona la categoría de Unidad de Cuidados Intensivos:",
     options=df["UCI"].unique(),
     default=df["UCI"].unique()
+)
+
+df_selection = df.query(
+    "EDAD == @edad & NACIONALIDAD == @nacionalidad & EMBARAZO == @embarazo & HABLA_LENGUA_INDIG == @lenguaIndigena"
 )
