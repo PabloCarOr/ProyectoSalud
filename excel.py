@@ -6,7 +6,7 @@ df = pd.read_excel('50000_Set_de_datos.xlsx')
 
 st.title('Proyecto Covid 19 / Equipo Pumas')
 
-st.write(df)
+#st.write(df)
 
 # ----- Sidebar -----
 st.sidebar.header("Filtra aquí:")
@@ -237,3 +237,5 @@ unidadCuidadosIntensivos = st.sidebar.multiselect(
 df_selection = df.query(
     "EDAD == @edad & NACIONALIDAD == @nacionalidad & EMBARAZO == @embarazo & HABLA_LENGUA_INDIG == @lenguaIndigena"
 )
+
+st.dataframe(df_selection)
