@@ -234,8 +234,8 @@ unidadCuidadosIntensivos = st.sidebar.multiselect(
     default=df["UCI"].unique()
 )
 
-df_selection = df.query(
-    "EDAD == @edad & NACIONALIDAD == @nacionalidad & EMBARAZO == @embarazo & HABLA_LENGUA_INDIG == @lenguaIndigena"
-)
+#df_selection = df.query(
+#    "EDAD == @edad & NACIONALIDAD == @nacionalidad & EMBARAZO == @embarazo & HABLA_LENGUA_INDIG == @lenguaIndigena"
+#)
 
 #st.dataframe(df_selection)
